@@ -54,6 +54,17 @@ public class Graph{
                 System.out.print(e.des+" ");
             }
             System.out.println();
+      
+        }
+    }
+    public static void isPlalindrome(int n){
+        int rev=0;
+        in temp=n;
+        while(n>0){
+            int ld=n%10;
+            rev=rev*10+ld;
+            n=n/10;
+            System
         }
     }
 

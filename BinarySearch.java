@@ -18,6 +18,5 @@ public class BinarySearch {
                left=mid+1; 
             }
         }
-        //System.out.println()
     }
 }

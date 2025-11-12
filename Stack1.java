@@ -11,10 +11,9 @@ for(int i=0;i<ch.length;i++){
         stack.push(ch[i]);
     }
     else{
-        if(stack.isEmpty()) System.out.println("False");
         char top=stack.pop();
         if((ch[i]==']'&&top=='[')|| (ch[i]==')'&&top==')')||(ch[i]=='}'&&top=='{') )
-System.out.println("true");
+System.out.println("False");
     }
 }
 System.out.println(stack.isEmpty());

@@ -10,6 +10,24 @@ public class HashMapP {
         for(String key : map.keySet()){
             System.out.println(key+"->"+map.get(key));
         }
+        Frequency();
+    }
+    public static void Frequency(){
+        int[] arr={1,2,3,4,64,2,2,3,64};
+        HashMap<Integer,Integer> map=new HashMap<>();
+        for(int num:arr){
+            Integer oldvalue=map.get(num);
+            if(oldvalue==null){
+                map.put(num,1);
+            }
+            else{
+                map.put(num,oldvalue+1);
+            }
+
+
+        }
+        System.out.println("Araay is"+map);
+
     }
     
 }
